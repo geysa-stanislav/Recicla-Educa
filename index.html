@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recicla e Educa | Logística Reversa</title>
+    <!-- Importação do Tailwind CSS para estilos rápidos e responsivos -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Importação do FontAwesome para ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Configuração de cores personalizadas do projeto -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            light: '#dcfce7',
+                            DEFAULT: '#16a34a',
+                            dark: '#15803d',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Adiciona um scroll suave ao clicar nos links do menu */
+        html { scroll-behavior: smooth; }
+    </style>
+</head>
+<body class="bg-yellow-50 text-gray-800 font-sans antialiased">
+
+    <!-- Cabeçalho (Fixo no topo) -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-4xl mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center gap-2">
+                <i class="fa-solid fa-leaf text-brand text-2xl"></i>
+                <h1 class="font-bold text-xl text-gray-900">Recicla e Educa</h1>
+            </div>
+            <a href="#equipe" class="text-sm font-semibold text-brand hover:text-brand-dark transition">Nossa Equipe</a>
+        </div>
+    </header>
+
+    <!-- Seção Hero (Boas-vindas com Mascote e Projeto) -->
+    <section class="bg-brand text-white py-12 px-4">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8">
+            
+            <!-- Lateral Esquerda: Mascote -->
+            <div class="w-32 md:w-48 flex-shrink-0 order-2 md:order-1 flex flex-col items-center">
+                <img src="rani.png" alt="Mascote do Projeto" class="w-full h-auto object-contain drop-shadow-xl" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                <!-- Placeholder amigável (só aparece se a imagem não for encontrada) -->
+                <div class="hidden w-32 h-32 md:w-40 md:h-40 bg-green-800 rounded-full flex-col items-center justify-center text-xs text-center p-2 border-2 border-dashed border-green-400">
+                    <i class="fa-solid fa-dog text-3xl mb-2 text-green-300"></i>
+                    <span class="text-green-300 font-bold">mascote.png</span>
+                </div>
+            </div>
+
+            <!-- Centro: Texto -->
+            <div class="flex-1 text-center order-1 md:order-2">
+                <h2 class="text-3xl md:text-4xl font-extrabold mb-4">A Trilha da Logística Reversa</h2>
+                <p class="text-lg text-white font-medium mb-6">Obrigado por visitar o nosso estande! Aqui estão todos os materiais para você continuar aprendendo sobre reciclagem.</p>
+            </div>
+
+            <!-- Lateral Direita: Projeto -->
+            <div class="w-32 md:w-48 flex-shrink-0 order-3 md:order-3 flex flex-col items-center">
+                <img src="logo time.jpg" alt="Foto do Projeto" class="w-full h-auto object-contain rounded-xl drop-shadow-xl" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                <!-- Placeholder amigável (só aparece se a imagem não for encontrada) -->
+                <div class="hidden w-32 h-32 md:w-40 md:h-40 bg-green-800 rounded-xl flex-col items-center justify-center text-xs text-center p-2 border-2 border-dashed border-green-400">
+                    <i class="fa-solid fa-camera text-3xl mb-2 text-green-300"></i>
+                    <span class="text-green-300 font-bold">projeto.png</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Seção 1: Logística Reversa -->
+    <section class="py-12 px-4 max-w-4xl mx-auto" id="logistica">
+        <div class="bg-white rounded-2xl shadow-md overflow-hidden">
+            <div class="p-6 md:p-8">
+                <div class="flex items-center gap-3 mb-4">
+                    <div class="bg-blue-100 p-3 rounded-full text-blue-600">
+                        <i class="fa-solid fa-recycle text-xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900">O Ciclo que Salva o Planeta</h3>
+                </div>
+                <p class="text-gray-800 font-medium mb-6 leading-relaxed">
+                    A Logística Reversa é a responsabilidade compartilhada de garantir que o lixo não seja o fim da linha. O que é seco (embalagens) volta para a Indústria. O que é úmido (orgânicos) volta para a Terra. Consulte o mapa abaixo:
+                </p>
+                
+                <!-- A imagem do mapa será carregada aqui se o arquivo mapa.jpg existir na pasta -->
+                <img src="caminhos da logistica reversa.png" alt="Mapa da Logística Reversa" class="w-full object-contain rounded-xl shadow-sm border border-gray-100" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                
+                <!-- Placeholder amigável (só aparece se o mapa.jpg não for encontrado) -->
+                <div class="hidden w-full bg-gray-100 rounded-xl h-64 flex-col items-center justify-center border-2 border-dashed border-gray-300 p-4 text-center">
+                    <i class="fa-regular fa-image text-4xl text-gray-400 mb-2"></i>
+                    <p class="text-gray-800 font-bold">Imagem do mapa não encontrada</p>
+                    <p class="text-sm text-gray-700 font-medium mt-1">Salve um recorte do cartaz com o nome <strong>mapa.jpg</strong> na mesma pasta do seu index.html</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção 2: Tutorial Vaso Autoirrigável com Vídeo -->
+    <section class="py-12 px-4 bg-brand-light" id="tutorial">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-8">
+                <h3 class="text-3xl font-bold text-brand-dark mb-3">Tutorial: Vaso Autoirrigável</h3>
+                <p class="text-gray-800 font-medium">Reutilize aquela garrafa PET antes de enviá-la para a reciclagem!</p>
+            </div>
+
+            <!-- Container do Vídeo do YouTube Responsivo -->
+            <div class="mb-10 max-w-3xl mx-auto bg-white rounded-xl overflow-hidden shadow-md border border-green-200">
+                <div class="relative w-full" style="padding-top: 56.25%;">
+                    <!-- Substitua SEU_ID_AQUI pelo ID do seu vídeo do YouTube -->
+                    <iframe class="absolute top-0 left-0 w-full h-full" src="https://www.youtube.com/embed/SEU_ID_AQUI" title="Tutorial Vaso Autoirrigável" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="bg-gray-50 p-3 text-center border-t border-gray-100 text-sm text-gray-700 font-medium">
+                    <i class="fa-brands fa-youtube text-red-600 mr-1"></i> Dê o play para assistir ao tutorial feito pela nossa equipe!
+                </div>
+            </div>
+
+            <!-- Passo a Passo em Texto -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Passo 1 -->
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-green-200 text-center relative">
+                    <span class="absolute -top-4 left-1/2 -translate-x-1/2 bg-brand text-white w-8 h-8 rounded-full flex items-center justify-center font-bold">1</span>
+                    <i class="fa-solid fa-scissors text-3xl text-blue-500 mb-4 mt-2"></i>
+                    <h4 class="font-bold text-gray-900 mb-2">Corte a Garrafa</h4>
+                    <p class="text-sm text-gray-800 font-medium">Corte a garrafa PET ao meio. A base será o reservatório de água.</p>
+                </div>
+                <!-- Passo 2 -->
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-green-200 text-center relative">
+                    <span class="absolute -top-4 left-1/2 -translate-x-1/2 bg-brand text-white w-8 h-8 rounded-full flex items-center justify-center font-bold">2</span>
+                    <i class="fa-solid fa-arrow-down-up-across-line text-3xl text-orange-500 mb-4 mt-2"></i>
+                    <h4 class="font-bold text-gray-900 mb-2">Inverta o Topo</h4>
+                    <p class="text-sm text-gray-800 font-medium">Vire a parte do gargalo para baixo e encaixe-a dentro da base.</p>
+                </div>
+                <!-- Passo 3 -->
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-green-200 text-center relative">
+                    <span class="absolute -top-4 left-1/2 -translate-x-1/2 bg-brand text-white w-8 h-8 rounded-full flex items-center justify-center font-bold">3</span>
+                    <i class="fa-solid fa-lines-leaning text-3xl text-purple-500 mb-4 mt-2"></i>
+                    <h4 class="font-bold text-gray-900 mb-2">Fio Condutor</h4>
+                    <p class="text-sm text-gray-800 font-medium">Passe um barbante de algodão pelo gargalo, ligando a água até a terra.</p>
+                </div>
+                <!-- Passo 4 -->
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-green-200 text-center relative">
+                    <span class="absolute -top-4 left-1/2 -translate-x-1/2 bg-brand text-white w-8 h-8 rounded-full flex items-center justify-center font-bold">4</span>
+                    <i class="fa-solid fa-seedling text-3xl text-green-700 mb-4 mt-2"></i>
+                    <h4 class="font-bold text-gray-900 mb-2">Plante e Adube</h4>
+                    <p class="text-sm text-gray-800 font-medium">Coloque terra no topo, plante e utilize o adubo da compostagem da UEMS!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção 3: 3 Dicas de Ouro -->
+    <section class="py-12 px-4 max-w-4xl mx-auto" id="dicas">
+        <h3 class="text-2xl font-bold text-gray-900 mb-8 text-center">3 Dicas de Ouro para Casa</h3>
+        <div class="space-y-4">
+            <!-- Dica 1 -->
+            <div class="flex items-start gap-4 p-5 bg-white rounded-xl shadow-sm border border-gray-100">
+                <div class="bg-yellow-100 p-3 rounded-lg text-yellow-600 mt-1">
+                    <i class="fa-solid fa-droplet"></i>
+                </div>
+                <div>
+                    <h4 class="font-bold text-gray-900 text-lg">Lave antes de descartar</h4>
+                    <p class="text-gray-800 font-medium">Restos de comida em embalagens plásticas podem inviabilizar a reciclagem. Passe uma água rápida (pode ser a da louça mesmo) antes de jogar na lixeira reciclável.</p>
+                </div>
+            </div>
+            <!-- Dica 2 -->
+            <div class="flex items-start gap-4 p-5 bg-white rounded-xl shadow-sm border border-gray-100">
+                <div class="bg-red-100 p-3 rounded-lg text-red-600 mt-1">
+                    <i class="fa-solid fa-box-archive"></i>
+                </div>
+                <div>
+                    <h4 class="font-bold text-gray-900 text-lg">Não amasse o papel</h4>
+                    <p class="text-gray-800 font-medium">Amassar o papel quebra as fibras e dificulta muito a reciclagem. O ideal é rasgar em pedaços ou apenas dobrar as caixas de papelão.</p>
+                </div>
+            </div>
+            <!-- Dica 3 -->
+            <div class="flex items-start gap-4 p-5 bg-white rounded-xl shadow-sm border border-gray-100">
+                <div class="bg-purple-100 p-3 rounded-lg text-purple-600 mt-1">
+                    <i class="fa-solid fa-wine-bottle"></i>
+                </div>
+                <div>
+                    <h4 class="font-bold text-gray-900 text-lg">Proteja o vidro quebrado</h4>
+                    <p class="text-gray-800 font-medium">Se um vidro quebrar, embale-o em jornal ou corte uma garrafa PET e coloque os cacos dentro. Isso protege os trabalhadores da coleta seletiva de acidentes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+<section class="py-12 px-4 bg-brand-light border-t border-b border-gray-200" id="descarte-cg">
+        <div class="max-w-5xl mx-auto">
+            <div class="text-center mb-10">
+                <span class="bg-blue-100 text-blue-800 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">Especial COP 15</span>
+                <h3 class="text-3xl font-bold text-gray-900 mt-4 mb-3">Onde Descartar em Campo Grande (MS)?</h3>
+                <p class="text-gray-800 font-medium">Faça a sua parte na proteção das nossas águas. Saiba onde levar os resíduos corretos:</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                
+                <div class="bg-white p-6 rounded-2xl shadow-lg border border-red-100 flex flex-col items-center text-center hover:shadow-xl transition-shadow duration-300">
+                    <div class="bg-red-50 p-5 rounded-full mb-6 border-2 border-red-200">
+                        <i class="fa-solid fa-pills text-5xl text-red-500"></i>
+                    </div>
+                    <h4 class="font-bold text-gray-900 text-2xl mb-3">Medicamentos Vencidos</h4>
+                    <p class="text-gray-800 font-medium text-base mb-6">Nunca jogue no vaso ou no lixo comum! Eles contaminam a água com substâncias químicas.</p>
+                    
+                    <div class="bg-red-50 w-full py-4 rounded-xl border border-red-100 mt-auto">
+                        <p class="text-red-900 text-lg font-extrabold mb-1">Onde levar:</p>
+                        <p class="text-gray-700 font-medium text-sm px-3">Farmácias de grandes redes e Unidades Básicas de Saúde (UBS) possuem postos de coleta.</p>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-2xl shadow-lg border border-yellow-100 flex flex-col items-center text-center hover:shadow-xl transition-shadow duration-300">
+                    <div class="bg-yellow-50 p-5 rounded-full mb-6 border-2 border-yellow-200">
+                        <i class="fa-solid fa-bottle-droplet text-5xl text-yellow-600"></i>
+                    </div>
+                    <h4 class="font-bold text-gray-900 text-2xl mb-3">Óleo de Cozinha</h4>
+                    <p class="text-gray-800 font-medium text-base mb-6">Um litro polui milhares de litros de água. Guarde o óleo usado em garrafas PET bem fechadas.</p>
+                    
+                    <div class="bg-yellow-50 w-full py-4 rounded-xl border border-yellow-100 mt-auto">
+                        <p class="text-yellow-900 text-lg font-extrabold mb-1">Onde levar:</p>
+                        <p class="text-gray-700 font-medium text-sm px-3">Ecopontos da cidade, feiras locais ou apoie projetos sociais que fazem sabão ecológico.</p>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-2xl shadow-lg border border-green-100 flex flex-col items-center text-center hover:shadow-xl transition-shadow duration-300">
+                    <div class="bg-green-50 p-5 rounded-full mb-6 border-2 border-green-200">
+                        <i class="fa-solid fa-tractor text-5xl text-green-600"></i>
+                    </div>
+                    <h4 class="font-bold text-gray-900 text-2xl mb-3">Defensivos Agrícolas</h4>
+                    <p class="text-gray-800 font-medium text-base mb-6">Atenção, Agrônomos! Embalagens vazias devem passar pela Tríplice Lavagem.</p>
+                    
+                    <div class="bg-green-50 w-full py-4 rounded-xl border border-green-100 mt-auto">
+                        <p class="text-green-900 text-lg font-extrabold mb-1">Onde levar:</p>
+                        <p class="text-gray-700 font-medium text-sm px-3">Devolva nas unidades do Sistema Campo Limpo (inpEV) indicadas na sua nota fiscal.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- NOVA SEÇÃO: Iniciativas Locais -->
+   <section class="py-12 px-4 bg-brand-light" id="parceiros">
+        <div class="max-w-4xl mx-auto">
+            <h3 class="text-2xl font-bold text-gray-900 mb-8 text-center">Apoie as Iniciativas Locais</h3>
+            
+
+                <a href="https://www.instagram.com/dubem_sustentavel?igsh=MWFtcDloYXQ3NjR4YQ==" target="_blank" rel="noopener noreferrer" class="flex items-center gap-4 bg-white p-5 rounded-xl shadow-sm border border-green-200 hover:shadow-md transition group">
+                    <div class="bg-green-100 p-4 rounded-full text-green-600 group-hover:bg-green-600 group-hover:text-white transition">
+                        <i class="fa-solid fa-worm text-2xl"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-gray-900 text-lg">DuBem Sustentável </h4>
+                        <p class="text-gray-800 font-medium text-sm">🌱Gestão de Resíduos em Eventos e Empresas</p>
+                         <p class="text-gray-800 font-medium text-sm">♻️Consultorias | Mentorias | Palestras</p>
+                         <p class="text-gray-800 font-medium text-sm">💰Sustentabilidade como estratégia de negócios</p>
+                        <span class="text-green-600 text-sm font-bold mt-1 inline-block"><i class="fa-brands fa-instagram"></i> Ver no Instagram</span>
+                    </div>
+                </a>
+
+                <a href="https://www.instagram.com/drivethrudasustentabilidade?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="flex items-center gap-4 bg-white p-5 rounded-xl shadow-sm border border-green-200 hover:shadow-md transition group">
+                    <div class="bg-blue-100 p-4 rounded-full text-blue-600 group-hover:bg-blue-600 group-hover:text-white transition">
+                        <i class="fa-solid fa-recycle text-2xl"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-gray-900 text-lg">Drive da Sustentabilidade</h4>
+                        <p class="text-gray-800 font-medium text-sm">Sustentabilidade | Educação | Cultura | Negócios♻️</p>
+                        <span class="text-blue-600 text-sm font-bold mt-1 inline-block"><i class="fa-brands fa-instagram"></i> Ver no Instagram</span>
+                    </div>
+                </a>
+
+                <a href="https://www.instagram.com/atla_snature?igsh=YTNzb3duYWM3NmVs" target="_blank" rel="noopener noreferrer" class="flex items-center gap-4 bg-white p-5 rounded-xl shadow-sm border border-green-200 hover:shadow-md transition group">
+                    <div class="bg-teal-100 p-4 rounded-full text-teal-600 group-hover:bg-teal-600 group-hover:text-white transition">
+                        <i class="fa-solid fa-seedling text-2xl"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-gray-900 text-lg">Atlas Nature por Willian Porcino</h4>
+                        <p class="text-gray-800 font-medium text-sm"> Geografia🧭 Natureza🌱 Ecossistemas🌎</p>
+                        <p class="text-gray-800 font-medium text-sm"> Observações do mundo natural</p>
+                        <span class="text-teal-600 text-sm font-bold mt-1 inline-block"><i class="fa-brands fa-instagram"></i> Ver no Instagram</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- Rodapé (Nossa Equipe / CTA) -->
+    <footer class="bg-blue-900 text-blue-100 py-12 px-4 text-center" id="equipe">
+        <div class="max-w-3xl mx-auto flex flex-col items-center">
+            
+            <!-- Logo do Time -->
+            <img src="projeto.jpg" alt="Logo do Time Enactus" class="h-24 md:h-32 mb-6 object-contain drop-shadow-xl" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <!-- Placeholder amigável (só aparece se a imagem não for encontrada) -->
+            <div class="hidden w-24 h-24 md:w-32 md:h-32 mb-6 bg-blue-800 rounded-full flex-col items-center justify-center text-xs text-center p-2 border-2 border-dashed border-blue-400">
+                <i class="fa-solid fa-users text-3xl mb-2 text-blue-300"></i>
+                <span class="text-blue-300 font-bold">logo-time.png</span>
+            </div>
+
+            <h3 class="text-2xl font-bold text-white mb-4">Projeto Recicla e Educa</h3>
+            <p class="mb-8 text-blue-200">Somos o Time Enactus AGEAD! Nosso objetivo é transformar a realidade através da educação ambiental e do empreendedorismo social.</p>
+            
+            <a href="https://www.instagram.com/enagead?igsh=b2p2OXoxbXB3dm41" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 bg-orange-500 text-white px-8 py-3 rounded-full font-bold hover:bg-orange-600 transition transform hover:scale-105 shadow-lg">
+                <i class="fa-brands fa-instagram text-xl"></i>
+                Marque a gente nas suas fotos!
+            </a>
+            
+            <div class="mt-12 pt-8 border-t border-blue-800 text-sm text-blue-300">
+                <p>&copy; 2026 Enactus AGEAD Recicla e Educa. Todos os direitos reservados.</p>
+                <p class="mt-2">Feito com 💚 para a comunidade.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

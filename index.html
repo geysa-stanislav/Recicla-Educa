@@ -103,25 +103,19 @@
         </div>
     </section>
 
-    <!-- Seção 2: Tutorial Vaso Autoirrigável com Vídeo -->
-    <section class="py-12 px-4 bg-brand-light" id="tutorial">
-        <div class="max-w-4xl mx-auto">
-            <div class="text-center mb-8">
-                <h3 class="text-3xl font-bold text-brand-dark mb-3">Tutorial: Vaso Autoirrigável</h3>
-                <p class="text-gray-800 font-medium">Reutilize aquela garrafa PET antes de enviá-la para a reciclagem!</p>
-            </div>
-
-            <!-- Container do Vídeo do YouTube Responsivo -->
-            <div class="mb-10 max-w-3xl mx-auto bg-white rounded-xl overflow-hidden shadow-md border border-green-200">
-                <div class="relative w-full" style="padding-top: 56.25%;">
-                    <!-- Substitua SEU_ID_AQUI pelo ID do seu vídeo do YouTube -->
-                    <iframe class="absolute top-0 left-0 w-full h-full" src="https://www.youtube.com/embed/SEU_ID_AQUI" title="Tutorial Vaso Autoirrigável" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-                <div class="bg-gray-50 p-3 text-center border-t border-gray-100 text-sm text-gray-700 font-medium">
-                    <i class="fa-brands fa-youtube text-red-600 mr-1"></i> Dê o play para assistir ao tutorial feito pela nossa equipe!
-                </div>
-            </div>
-
+ <div class="mb-10 max-w-3xl mx-auto bg-white rounded-xl overflow-hidden shadow-md border border-green-200">
+    
+    <div class="relative w-full aspect-video">
+        <video controls class="absolute inset-0 w-full h-full outline-none" preload="metadata">
+            <source src="tutorial.mp4" type="video/mp4">
+            Seu navegador não suporta a reprodução de vídeos.
+        </video>
+    </div>
+    
+    <div class="bg-gray-50 p-3 text-center border-t border-gray-100 text-sm text-gray-700 font-medium">
+        <i class="fa-solid fa-play text-green-600 mr-1"></i> Dê o play para assistir ao tutorial com áudio!
+    </div>
+</div>
             <!-- Passo a Passo em Texto -->
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                 <!-- Passo 1 -->

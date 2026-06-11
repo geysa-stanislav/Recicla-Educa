@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recicla e Educa | Cultivo Seguro</title>
+    <!-- Importação do Tailwind CSS para estilos rápidos e responsivos -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Importação do FontAwesome para ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Configuração de cores personalizadas do projeto -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            light: '#dcfce7',
+                            DEFAULT: '#16a34a',
+                            dark: '#15803d',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Adiciona um scroll suave ao clicar nos links do menu */
+        html { scroll-behavior: smooth; }
+    </style>
+</head>
+<body class="bg-yellow-50 text-gray-800 font-sans antialiased">
+
+    <!-- Cabeçalho (Fixo no topo) -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-4xl mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center gap-2">
+                <i class="fa-solid fa-leaf text-brand text-2xl"></i>
+                <h1 class="font-bold text-xl text-gray-900">Recicla e Educa</h1>
+            </div>
+            <a href="#equipe" class="text-sm font-semibold text-brand hover:text-brand-dark transition">Nossa Equipe</a>
+        </div>
+    </header>
+
+    <!-- Seção Hero (Boas-vindas com Mascote e Projeto) -->
+    <section class="bg-brand text-white py-12 px-4">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8">
+            
+            <!-- Lateral Esquerda: Mascote -->
+            <div class="w-32 md:w-48 flex-shrink-0 order-2 md:order-1 flex flex-col items-center">
+                <img src="rani.png" alt="Mascote do Projeto" class="w-full h-auto object-contain drop-shadow-xl" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                <!-- Placeholder amigável -->
+                <div class="hidden w-32 h-32 md:w-40 md:h-40 bg-green-800 rounded-full flex-col items-center justify-center text-xs text-center p-2 border-2 border-dashed border-green-400">
+                    <i class="fa-solid fa-dog text-3xl mb-2 text-green-300"></i>
+                    <span class="text-green-300 font-bold">rani.png</span>
+                </div>
+            </div>
+
+            <!-- Centro: Texto -->
+            <div class="flex-1 text-center order-1 md:order-2">
+                <h2 class="text-3xl md:text-4xl font-extrabold mb-4">A Trilha do Cultivo Seguro</h2>
+                <p class="text-lg text-white font-medium mb-6"> Aqui estão todos os materiais para você continuar aprendendo sobre hortas e reciclagem segura.</p>
+            </div>
+
+            <!-- Lateral Direita: Projeto -->
+            <div class="w-32 md:w-48 flex-shrink-0 order-3 md:order-3 flex flex-col items-center">
+                <img src="logo time.jpg" alt="Foto do Projeto" class="w-full h-auto object-contain rounded-xl drop-shadow-xl" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                <!-- Placeholder amigável -->
+                <div class="hidden w-32 h-32 md:w-40 md:h-40 bg-green-800 rounded-xl flex-col items-center justify-center text-xs text-center p-2 border-2 border-dashed border-green-400">
+                    <i class="fa-solid fa-camera text-3xl mb-2 text-green-300"></i>
+                    <span class="text-green-300 font-bold">logo time.jpg</span>
+                </div>
+        </div>
+    </section>
+
+<section class="py-12 px-4 max-w-4xl mx-auto" id="logistica">
+        <div class="bg-white rounded-2xl shadow-md overflow-hidden">
+            <div class="p-6 md:p-8">
+                <div class="flex items-center gap-3 mb-4">
+                    <div class="bg-blue-100 p-3 rounded-full text-blue-600">
+                        <i class="fa-solid fa-recycle text-xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900">Descarte Responsável e Cultivo Caseiro</h3>
+                </div>
+                
+                <p class="text-gray-800 font-medium mb-4 leading-relaxed">
+                    Em grandes plantações, o uso de defensivos agrícolas exige um descarte rigoroso das embalagens através do <strong>Sistema Campo Limpo</strong>, que é um programa que faz a logística reversa dessas embalagens. 
+                </p>
+                
+                <div class="mb-8 border-l-4 border-red-500 bg-red-50 p-4 rounded-r-lg">
+                    <p class="text-gray-800 font-medium leading-relaxed">
+                        <strong>Atenção:</strong> Para o cultivo de pequenas hortas e cultivo caseiro, é desestimulado o uso de produtos como estes. Manipular defensivos agrícolas exige conhecimento técnico específico e equipamento de proteção. Um erro na dose pode prejudicar a terra, a planta e a saúde da sua família. Para o cultivo caseiro, o ideal são metodologias naturais e orgânicas.
+                    </p>
+                </div>
+                
+                <img src="ciclo_vida.jpg" alt="Ciclo de Vida da Embalagem - inpEV" class="w-full object-contain rounded-xl shadow-sm border border-gray-100" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                
+                <div class="hidden w-full bg-gray-100 rounded-xl h-64 flex-col items-center justify-center border-2 border-dashed border-gray-300 p-4 text-center">
+                    <i class="fa-regular fa-image text-4xl text-gray-400 mb-2"></i>
+                    <p class="text-gray-800 font-bold">Imagem do ciclo inpEV não encontrada</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-12 px-4 max-w-4xl mx-auto" id="triplice-lavagem">
+        <div class="bg-white rounded-2xl shadow-md border border-gray-200 overflow-hidden">
+            <div class="p-6 md:p-8">
+                <div class="flex items-center gap-3 mb-6">
+                    <div class="bg-red-50 p-3 rounded-full text-red-500 border border-red-100">
+                        <i class="fa-solid fa-triangle-exclamation text-xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900">Usa Defensivo? Faça a Tríplice Lavagem!</h3>
+                </div>
+                <p class="text-gray-800 font-medium mb-8">
+                    Se você precisou usar produto químico (veneno) na horta, a limpeza da embalagem é obrigatória por lei. Siga as etapas de segurança antes de devolver:
+                </p>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="flex items-start gap-4 p-5 bg-gray-50 rounded-xl border border-gray-100 hover:shadow-sm transition">
+                        <div class="bg-red-100 text-red-600 w-10 h-10 rounded-full flex items-center justify-center font-bold shrink-0 border border-red-200">1</div>
+                        <div>
+                            <h4 class="font-bold text-gray-900 text-lg mb-1">Água e Agitação</h4>
+                            <p class="text-gray-700 text-sm font-medium">Coloque apenas 1/4 de água limpa na embalagem, tampe bem e agite com força por 30 segundos.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-4 p-5 bg-gray-50 rounded-xl border border-gray-100 hover:shadow-sm transition">
+                        <div class="bg-red-100 text-red-600 w-10 h-10 rounded-full flex items-center justify-center font-bold shrink-0 border border-red-200">2</div>
+                        <div>
+                            <h4 class="font-bold text-gray-900 text-lg mb-1">Bomba Costal</h4>
+                            <p class="text-gray-700 text-sm font-medium">Jogue essa água da lavagem dentro do pulverizador/bomba costal. <strong>Repita 3 vezes!</strong> Assim você aproveita 100% do produto.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-4 p-5 bg-gray-50 rounded-xl border border-gray-100 hover:shadow-sm transition">
+                        <div class="bg-red-100 text-red-600 w-10 h-10 rounded-full flex items-center justify-center font-bold shrink-0 border border-red-200">3</div>
+                        <div>
+                            <h4 class="font-bold text-gray-900 text-lg mb-1">Fure o Fundo</h4>
+                            <p class="text-gray-700 text-sm font-medium">Faça um furo no fundo da embalagem. Isso sinaliza para a família que o galão é perigoso e não pode ser usado para mais nada.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-4 p-5 bg-gray-50 rounded-xl border border-gray-100 hover:shadow-sm transition">
+                        <div class="bg-red-100 text-red-600 w-10 h-10 rounded-full flex items-center justify-center font-bold shrink-0 border border-red-200">4</div>
+                        <div>
+                            <h4 class="font-bold text-gray-900 text-lg mb-1">Devolução (Só Defensivos!)</h4>
+                            <p class="text-gray-700 text-sm font-medium">Guarde na caixa original com as <strong>tampas originais</strong> e devolva no Sistema Campo Limpo. <strong>Não misture</strong> com frascos de sementes ou remédios.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-12 px-4 max-w-4xl mx-auto" id="dicas">
+        <h3 class="text-2xl font-bold text-gray-900 mb-4 text-center">Controle de Pragas: As 3 Receitas Naturais</h3>
+        <p class="text-gray-800 font-medium text-center mb-8 leading-relaxed">
+            Mesmo com a planta forte, pragas como pulgões e cochonilhas podem aparecer. Para combater, temos três soluções diferentes, que <strong>nunca devem ser misturadas</strong>:
+        </p>
+
+        <div class="space-y-4 mb-8">
+            <div class="flex items-start gap-4 p-5 bg-white rounded-xl shadow-sm border border-gray-100">
+                <div class="bg-yellow-100 p-3 rounded-lg text-yellow-600 mt-1">
+                    <i class="fa-solid fa-spray-can"></i>
+                </div>
+                <div>
+                    <h4 class="font-bold text-gray-900 text-lg">1. Calda de Alho (Uso Pontual)</h4>
+                    <p class="text-gray-800 font-medium mt-1">Amasse 4 dentes de alho grandes com casca em 1 litro de água. Deixe descansar no escuro por 24 horas, coe bem e borrife. Para prevenção, use uma vez por semana. Na infestação, a cada dois dias.</p>
+                </div>
+            </div>
+            
+            <div class="flex items-start gap-4 p-5 bg-white rounded-xl shadow-sm border border-gray-100">
+                <div class="bg-blue-100 p-3 rounded-lg text-blue-600 mt-1">
+                    <i class="fa-solid fa-soap"></i>
+                </div>
+                <div>
+                    <h4 class="font-bold text-gray-900 text-lg">2. Vinagre e Detergente Neutro (Uso Pontual)</h4>
+                    <p class="text-gray-800 font-medium mt-1">Em 1 litro de água, misture 1 colher de sopa de vinagre e 1 colher de sopa de detergente neutro. Borrife no final da tarde. Na infestação, aplique por 3 dias seguidos. Para prevenir, a cada 15 dias.</p>
+                </div>
+            </div>
+            
+            <div class="flex items-start gap-4 p-5 bg-white rounded-xl shadow-sm border border-gray-100">
+                <div class="bg-green-100 p-3 rounded-lg text-green-600 mt-1">
+                    <i class="fa-solid fa-leaf"></i>
+                </div>
+                <div>
+                    <h4 class="font-bold text-gray-900 text-lg">3. Óleo de Neem (O Cuidado Diário)</h4>
+                    <p class="text-gray-800 font-medium mt-1">O Neem é excelente e de baixa toxicidade para nós e para os pets. Dilua 10 ml em 1 litro de água. Se houver pragas, use uma vez por semana. Para prevenção, a cada 15 ou 20 dias. <strong>Atenção:</strong> Nunca use todos os dias, pois o óleo cria uma camada que entope os 'poros' da planta, impedindo ela de respirar.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-brand-light border border-brand/30 rounded-xl p-6 shadow-sm mb-8">
+            <h4 class="text-xl font-bold text-brand-dark mb-4 flex items-center gap-2">
+                <i class="fa-solid fa-circle-exclamation"></i> Cuidados Essenciais nas Aplicações
+            </h4>
+            <ul class="space-y-4 text-gray-800 font-medium">
+                <li class="flex items-start gap-3">
+                    <i class="fa-regular fa-clock text-brand mt-1"></i>
+                    <span><strong>Horário:</strong> Sempre borrife no fim da tarde ou à noite. O sol forte pode agir como uma lupa na gota d'água e queimar a folha, além de destruir os princípios ativos naturais.</span>
+                </li>
+                <li class="flex items-start gap-3">
+                    <i class="fa-solid fa-bug text-brand mt-1"></i>
+                    <span><strong>Polinizadores:</strong> Evite aplicar quando a planta estiver florida para não afastar ou prejudicar as abelhas.</span>
+                </li>
+                <li class="flex items-start gap-3">
+                    <i class="fa-solid fa-basket-shopping text-brand mt-1"></i>
+                    <span><strong>Colheita:</strong> Se aplicar na sua horta, aguarde de 3 a 7 dias antes de colher. Lave muito bem o alimento para remover qualquer resíduo ou gosto amargo.</span>
+                </li>
+                <li class="flex items-start gap-3">
+                    <i class="fa-solid fa-arrows-down-to-line text-brand mt-1"></i>
+                    <span><strong>Onde aplicar:</strong> O grande segredo não é jogar o produto por cima, mas aplicar principalmente na parte de baixo das folhas, onde os insetos se escondem.</span>
+                </li>
+            </ul>
+        </div>
+
+        <div class="bg-brand-light border-2 border-brand border-dashed rounded-2xl p-8 text-center shadow-sm hover:shadow-md transition duration-300">
+            <i class="fa-regular fa-file-pdf text-5xl text-red-500 mb-4"></i>
+            <h3 class="text-2xl font-bold text-gray-900 mb-2">Baixe nosso Material de Apoio</h3>
+            <p class="text-gray-800 font-medium mb-6">Quer levar essas receitas e dicas com você? Baixe nossa cartilha completa em PDF.</p>
+            
+            <a href="Caldas_bioinsumos.pdf" target="_blank" class="inline-flex items-center gap-2 bg-brand text-white px-6 py-3 rounded-full font-bold hover:bg-brand-dark transition transform hover:-translate-y-1 shadow-lg">
+                <i class="fa-solid fa-download"></i>
+                Baixar Cartilha Completa
+            </a>
+        </div>
+    </section>
+
+    <section class="py-6 px-4 max-w-4xl mx-auto" id="tutorial">
+        <h3 class="text-3xl font-bold text-gray-900 mb-8 text-center">Como fazer o seu vasinho auto irrigável de garrafa pet em casa!</h3>
+        <div class="mb-10 max-w-3xl mx-auto bg-white rounded-xl overflow-hidden shadow-md border border-green-200">
+            <div class="relative w-full aspect-video">
+                <video controls class="absolute inset-0 w-full h-full outline-none" preload="metadata">
+                    <source src="tutorial.mp4" type="video/mp4">
+                    Seu navegador não suporta a reprodução de vídeos.
+                </video>
+            </div>
+            <div class="bg-gray-50 p-3 text-center border-t border-gray-100 text-sm text-gray-700 font-medium">
+                <i class="fa-solid fa-play text-green-600 mr-1"></i> Dê o play para assistir ao tutorial com áudio!
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div class="bg-white p-6 rounded-xl shadow-sm border border-green-200 text-center relative">
+                <span class="absolute -top-4 left-1/2 -translate-x-1/2 bg-brand text-white w-8 h-8 rounded-full flex items-center justify-center font-bold">1</span>
+                <i class="fa-solid fa-scissors text-3xl text-blue-500 mb-4 mt-2"></i>
+                <h4 class="font-bold text-gray-900 mb-2">Corte a Garrafa</h4>
+                <p class="text-sm text-gray-800 font-medium">Corte a garrafa PET de água/refrigerante ao meio. A base será o reservatório.</p>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow-sm border border-green-200 text-center relative">
+                <span class="absolute -top-4 left-1/2 -translate-x-1/2 bg-brand text-white w-8 h-8 rounded-full flex items-center justify-center font-bold">2</span>
+                <i class="fa-solid fa-arrow-down-up-across-line text-3xl text-orange-500 mb-4 mt-2"></i>
+                <h4 class="font-bold text-gray-900 mb-2">Inverta o Topo</h4>
+                <p class="text-sm text-gray-800 font-medium">Vire a parte do gargalo para baixo e encaixe-a dentro da base.</p>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow-sm border border-green-200 text-center relative">
+                <span class="absolute -top-4 left-1/2 -translate-x-1/2 bg-brand text-white w-8 h-8 rounded-full flex items-center justify-center font-bold">3</span>
+                <i class="fa-solid fa-lines-leaning text-3xl text-purple-500 mb-4 mt-2"></i>
+                <h4 class="font-bold text-gray-900 mb-2">Fio Condutor</h4>
+                <p class="text-sm text-gray-800 font-medium">Passe um barbante pelo gargalo, ligando a água até a terra.</p>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow-sm border border-green-200 text-center relative">
+                <span class="absolute -top-4 left-1/2 -translate-x-1/2 bg-brand text-white w-8 h-8 rounded-full flex items-center justify-center font-bold">4</span>
+                <i class="fa-solid fa-seedling text-3xl text-green-700 mb-4 mt-2"></i>
+                <h4 class="font-bold text-gray-900 mb-2">Plante e Adube</h4>
+                <p class="text-sm text-gray-800 font-medium">Coloque terra no topo, plante e misture o adubo orgânico que você ganhou!</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-12 px-4 bg-brand-light border-t border-b border-gray-200" id="descarte-cg">
+        <div class="max-w-5xl mx-auto">
+            <div class="text-center mb-10">
+                <h3 class="text-3xl font-bold text-gray-900 mt-4 mb-3">O Que Pode Virar Vaso e o Que Descartar?</h3>
+                <p class="text-gray-800 font-medium">Proteja sua saúde: saiba o que é seguro reaproveitar na sua horta.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-white p-6 rounded-2xl shadow-lg border border-blue-100 flex flex-col items-center text-center hover:shadow-xl transition-shadow duration-300">
+                    <div class="bg-blue-50 p-5 rounded-full mb-6 border-2 border-blue-200">
+                        <i class="fa-solid fa-bottle-water text-5xl text-blue-500"></i>
+                    </div>
+                    <h4 class="font-bold text-gray-900 text-2xl mb-3">Garrafas de Alimentos</h4>
+                    <p class="text-gray-800 font-medium text-base mb-6">PETs de água, suco ou refrigerante, e caixas de ovos são materiais seguros.</p>
+                    
+                    <div class="bg-blue-50 w-full py-4 rounded-xl border border-blue-100 mt-auto">
+                        <p class="text-blue-900 text-lg font-extrabold mb-1">O que fazer:</p>
+                        <p class="text-gray-700 font-medium text-sm px-3">Faça vasinhos autoirrigáveis e sementeiras sem medo de contaminação!</p>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-2xl shadow-lg border border-yellow-100 flex flex-col items-center text-center hover:shadow-xl transition-shadow duration-300">
+                    <div class="bg-yellow-50 p-5 rounded-full mb-6 border-2 border-yellow-200">
+                        <i class="fa-solid fa-bottle-droplet text-5xl text-yellow-600"></i>
+                    </div>
+                    <h4 class="font-bold text-gray-900 text-2xl mb-3">Óleo, Remédios e Eletrônicos</h4>
+                    <p class="text-gray-800 font-medium text-base mb-6">Guarde o óleo em PETs fechadas. Ele, junto com eletrônicos velhos e medicamentos vencidos, precisa de descarte especial.</p>
+                    
+                    <div class="bg-yellow-50 w-full py-4 rounded-xl border border-yellow-100 mt-auto flex flex-col items-center">
+                        <p class="text-yellow-900 text-lg font-extrabold mb-1">Onde levar:</p>
+                        <p class="text-gray-700 font-medium text-sm px-3 mb-2">No <strong>Drive Thru da Sustentabilidade</strong>!</p>
+                        <a href="https://www.instagram.com/drivethrudasustentabilidade?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw%3D%3D" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-yellow-700 hover:text-yellow-900 font-bold text-sm transition">
+                            <i class="fa-brands fa-instagram text-lg"></i> Ver Instagram
+                        </a>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-2xl shadow-lg border border-red-100 flex flex-col items-center text-center hover:shadow-xl transition-shadow duration-300">
+                    <div class="bg-red-50 p-5 rounded-full mb-6 border-2 border-red-200">
+                        <i class="fa-solid fa-skull-crossbones text-5xl text-red-600"></i>
+                    </div>
+                    <h4 class="font-bold text-gray-900 text-xl mb-3">Defensivos Agrícolas (Veneno)</h4>
+                    <p class="text-gray-800 font-medium text-base mb-6">Essas embalagens absorvem os produtos químicos e não podem ser reaproveitadas.</p>
+                    
+                    <div class="bg-red-50 w-full py-4 rounded-xl border border-red-100 mt-auto flex flex-col items-center">
+                        <p class="text-red-900 text-lg font-extrabold mb-1">Atenção Máxima:</p>
+                        <p class="text-gray-700 font-medium text-sm px-3 mb-2">NUNCA use para horta! Faça a lavagem e devolva no <strong>Sistema Campo Limpo</strong>.</p>
+                        <a href="https://www.sistemacampolimpo.org.br/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-red-700 hover:text-red-900 font-bold text-sm transition">
+                            <i class="fa-solid fa-globe text-lg"></i> Site Oficial
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-12 px-4 bg-yellow-50" id="parceiros">
+        <div class="max-w-xl mx-auto">
+            <h3 class="text-2xl font-bold text-gray-900 mb-8 text-center">Apoie as Iniciativas Locais</h3>
+            
+            <a href="https://www.instagram.com/mercadoescolaufms/" target="_blank" rel="noopener noreferrer" class="flex items-center gap-4 bg-white p-5 rounded-xl shadow-sm border border-green-200 hover:shadow-md transition group">
+                <div class="bg-green-100 p-4 rounded-full text-green-600 group-hover:bg-green-600 group-hover:text-white transition">
+                    <i class="fa-solid fa-shop text-2xl"></i>
+                </div>
+                <div>
+                    <h4 class="font-bold text-gray-900 text-xl mb-1">Mercado Escola UFMS</h4>
+                    <p class="text-gray-800 font-medium text-sm">🌱 Produtos locais, orgânicos e sustentáveis</p>
+                    <p class="text-gray-800 font-medium text-sm">🧑‍🌾 Fomento à agricultura familiar e educação</p>
+                    <span class="text-green-600 text-sm font-bold mt-2 inline-block"><i class="fa-brands fa-instagram"></i> Ver no Instagram</span>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <!-- Rodapé (Nossa Equipe / CTA) -->
+    <footer class="bg-blue-900 text-blue-100 py-12 px-4 text-center" id="equipe">
+        <div class="max-w-3xl mx-auto flex flex-col items-center">
+            
+            <!-- Logo do Time -->
+            <img src="projeto.jpg" alt="Logo do Time Enactus" class="h-24 md:h-32 mb-6 object-contain drop-shadow-xl" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <!-- Placeholder amigável -->
+            <div class="hidden w-24 h-24 md:w-32 md:h-32 mb-6 bg-blue-800 rounded-full flex-col items-center justify-center text-xs text-center p-2 border-2 border-dashed border-blue-400">
+                <i class="fa-solid fa-users text-3xl mb-2 text-blue-300"></i>
+                <span class="text-blue-300 font-bold">projeto.jpg</span>
+            </div>
+            <!-- Placeholder amigável -->
+            <div class="hidden w-24 h-24 md:w-32 md:h-32 mb-6 bg-blue-800 rounded-full flex-col items-center justify-center text-xs text-center p-2 border-2 border-dashed border-blue-400">
+                <i class="fa-solid fa-users text-3xl mb-2 text-blue-300"></i>
+                <span class="text-blue-300 font-bold">projeto.jpg</span>
+            </div>
+
+            <h3 class="text-2xl font-bold text-white mb-4">Projeto Recicla e Educa</h3>
+            <p class="mb-8 text-blue-200">Somos o Time Enactus AGEAD! Nosso objetivo é transformar a realidade através da educação ambiental e do empreendedorismo social.</p>
+            
+            <a href="https://www.instagram.com/enagead?igsh=b2p2OXoxbXB3dm41" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 bg-orange-500 text-white px-8 py-3 rounded-full font-bold hover:bg-orange-600 transition transform hover:scale-105 shadow-lg">
+                <i class="fa-brands fa-instagram text-xl"></i>
+                Marque a gente nas suas fotos!
+            </a>
+            
+            <div class="mt-12 pt-8 border-t border-blue-800 text-sm text-blue-300">
+                <p>&copy; 2026 Enactus AGEAD Recicla e Educa. Todos os direitos reservados.</p>
+                <p class="mt-2">Feito com 💚 para a comunidade.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
